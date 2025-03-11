@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast | Using JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-r from-blue-500 to-purple-600 min-h-screen flex items-center justify-center">
+
+    <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md text-center">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">Weather Forecast</h1>
+        
+        <div class="flex items-center justify-center gap-2">
+            <input type="text" id="cityInput" placeholder="Enter city name" 
+                class="w-full p-2 border rounded-lg outline-none focus:ring focus:ring-blue-300" />
+            <button onclick="getWeather(event)" 
+                class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+                Get Weather
+            </button>
+        </div>
+
+        <div id="weatherData" class="mt-6 p-4 bg-gray-100 rounded-lg shadow-md">
+            <h3 id="CityName" class="text-xl font-semibold text-gray-800"></h3>
+            <h6 id="Temperature" class="text-lg font-semibold text-gray-700">0°C</h6>
+            <h5 id="Humidity" class="text-lg text-gray-700">Humidity: 0%</h5>
+            <h4 id="FeelLike" class="text-lg text-gray-700">Feels Like:</h4>
+            <h4 id="WindSpeed" class="text-lg text-gray-700">Wind Speed:</h4>
+            <p id="Description" class="text-gray-600 italic"></p>
+            <h4 id="Contry" class="text-lg font-semibold text-gray-800"></h4>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
