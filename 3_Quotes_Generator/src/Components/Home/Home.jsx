@@ -51,7 +51,7 @@ function Home() {
           <p className="text-lg font-semibold text-gray-800 italic border-l-4 border-blue-500 pl-3">
             "{quotes.quote}"
           </p>
-          <h4 className="mt-4 text-blue-600 font-semibold">🖊 Writer: {quotes.author}</h4>
+          <h4 className="mt-4 text-blue-600 font-semibold">🖊Writer: {quotes.author}</h4>
           <h6 className="mt-2 text-gray-500">📌 Category: {quotes.category}</h6>
         </div>
       ))}
