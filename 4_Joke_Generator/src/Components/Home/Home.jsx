@@ -4,7 +4,7 @@ import { Clipboard as ClipboardIcon, Check } from "lucide-react";
 const Home = () => {
     const [jokes, setJokes] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [copiedIndex, setCopiedIndex] = useState(null); // Track copied joke
+    const [copiedIndex, setCopiedIndex] = useState(null);
 
     useEffect(() => {
         const API_KEY = "B9i1uTG5Jz4iYO2Gkct23w==bVSONreqE5xIN9iW";
